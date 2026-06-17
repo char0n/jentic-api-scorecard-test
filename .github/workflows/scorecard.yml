@@ -18,3 +18,4 @@ jobs:
         with:
           input: https://raw.githubusercontent.com/jentic/jentic-public-apis/refs/heads/main/apis/openapi/swagger-api/petstore/1.0.27/openapi.json
           min-score: '60'
+          summary-detail: signal
