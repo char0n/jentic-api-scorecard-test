@@ -1,0 +1,20 @@
+name: API readiness
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  security-events: write # required so SARIF uploads to the Security tab
+
+jobs:
+  scorecard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jentic/jentic-api-scorecard@v1.8.0 # pin a released version (or a commit SHA)
+        with:
+          input: https://raw.githubusercontent.com/jentic/jentic-public-apis/refs/heads/main/apis/openapi/swagger-api/petstore/1.0.27/openapi.json
+          min-score: '70'
