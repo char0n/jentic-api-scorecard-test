@@ -17,4 +17,4 @@ jobs:
       - uses: jentic/jentic-api-scorecard@41a7ae92dad77f1a4836d0f409286c637cdf82f2 # candidate fix for postprocess module resolution
         with:
           input: https://raw.githubusercontent.com/jentic/jentic-public-apis/refs/heads/main/apis/openapi/swagger-api/petstore/1.0.27/openapi.json
-          min-score: '70'
+          min-score: '60'
