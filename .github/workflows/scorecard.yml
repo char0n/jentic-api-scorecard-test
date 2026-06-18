@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: jentic/jentic-api-scorecard@de8a32b0a04909d3663c973903162cc6038eacc2
+      - uses: jentic/jentic-api-scorecard@9c8cffef9330994e5857fa8d008bf35119ff7253
         with:
           input: https://raw.githubusercontent.com/jentic/jentic-public-apis/refs/heads/main/apis/openapi/swagger-api/petstore/1.0.27/openapi.json
           min-score: '60'
