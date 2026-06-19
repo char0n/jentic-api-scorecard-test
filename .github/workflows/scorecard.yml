@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: jentic/jentic-api-scorecard@fix/200-sarif-url-artifact-uri
+      - uses: jentic/jentic-api-scorecard@feat/191-sarif-source-line-mapping-impl
         with:
           api-key: ${{ secrets.JENTIC_API_KEY }}
           input: ./openapi.json
